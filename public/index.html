@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Moving Company - Reliable & Careful Moving Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.webp" alt="MovingPro Logo" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#quote" class="nav-link">Free Quote</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#packing" class="nav-link">Professional Packing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#junk-removal" class="nav-link">Junk Removal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🏆 Trusted by 10,000+ Families</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Professional Moving</span>
+                    <span class="hero-subtitle">Services You Can Trust</span>
+                </h1>
+                <p class="hero-description">Experience stress-free moving with our expert team. We handle everything with care and precision, ensuring your belongings arrive safely at their new home.</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free Estimates</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Same Day Service</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-hero" onclick="scrollToQuote()">
+                        <i class="fas fa-calculator"></i>
+                        Free Estimates Today
+                    </button>
+                    <button class="btn btn-secondary btn-hero" onclick="callNow()">
+                        <i class="fas fa-phone"></i> Call Now: (555) 123-4567
+                    </button>
+                </div>
+            </div>
+                            <div class="hero-visual">
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <h2>Get Your Free Moving Quote</h2>
+            <p>Fill out the form below and we'll get back to you with a personalized quote within 24 hours.</p>
+            
+            <form id="quoteForm" class="quote-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="moveType">Service Type *</label>
+                    <select id="moveType" name="moveType" required>
+                        <option value="">Select service type</option>
+                        <option value="local">Local Move</option>
+                        <option value="long-distance">Long Distance Move</option>
+                        <option value="professional-packing">Professional Packing</option>
+                        <option value="junk-removal">Junk Removal</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Get Free Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Value Propositions Section -->
+    <section class="value-section">
+        <div class="container">
+            <h2>Why Choose Our Moving Services?</h2>
+            <div class="value-cards">
+                <div class="value-card">
+                    <div class="card-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Years of Experience</h3>
+                    <p>With over 15 years in the moving industry, we have the expertise to handle any move, big or small.</p>
+                </div>
+                <div class="value-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Reliable & Trustworthy</h3>
+                    <p>Licensed, bonded, and insured. Your belongings are protected with comprehensive coverage.</p>
+                </div>
+                <div class="value-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Moving with Care</h3>
+                    <p>We treat your possessions as if they were our own, using proper packing materials and techniques.</p>
+                </div>
+                <div class="value-card">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>100% Satisfaction Guarantee</h3>
+                    <p>We're not satisfied until you are. Our guarantee ensures your complete peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2>Transparent Pricing</h2>
+            <p>No hidden fees, no surprises. Get upfront pricing for all our services.</p>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Intrastate Moving</h3>
+                    <div class="price">2 hrs $298.00</div>
+                    <div class="price-note">This does not include other move-specific fees.</div>
+                    <ul>
+                        <li>Full-service moving</li>
+                        <li>Packing materials included</li>
+                        <li>Insurance coverage</li>
+                        <li>24/7 tracking</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="scrollToQuote()">Get Quote</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3>Local Moves</h3>
+                    <div class="price">2 hrs $298.00</div>
+                    <div class="price-note">This does not include other move-specific fees.</div>
+                    <ul>
+                        <li>Same-day service available</li>
+                        <li>Professional movers</li>
+                        <li>Furniture protection</li>
+                        <li>Loading & unloading</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="scrollToQuote()">Get Quote</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Professional Packing</h3>
+                    <div class="price">2 hrs $298.00</div>
+                    <div class="price-note">This does not include other move-specific fees.</div>
+                    <ul>
+                        <li>Expert packers</li>
+                        <li>Quality materials</li>
+                        <li>Fragile item care</li>
+                        <li>Inventory list</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="scrollToQuote()">Get Quote</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Junk Removal</h3>
+                    <div class="price">2 hrs $149.00 per hour</div>
+                    <div class="price-note">Not including other move-specific fees.</div>
+                    <ul>
+                        <li>Same-day service</li>
+                        <li>Eco-friendly disposal</li>
+                        <li>No item too large</li>
+                        <li>Clean-up included</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="scrollToQuote()">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing service! The team was professional, careful, and efficient. They made our cross-country move stress-free."</p>
+                    <div class="reviewer">
+                        <strong>Sarah Johnson</strong>
+                        <span>New York to California</span>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Professional packing service was worth every penny. Everything arrived in perfect condition."</p>
+                    <div class="reviewer">
+                        <strong>Mike Chen</strong>
+                        <span>Local Move</span>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Fast and reliable junk removal service. They cleared out our entire garage in just a few hours."</p>
+                    <div class="reviewer">
+                        <strong>Lisa Rodriguez</strong>
+                        <span>Junk Removal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Visit Our Location</h2>
+            <p>Find us in beautiful Fort Myers, Florida</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.1234567890!2d-81.8726!3d26.6406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db1b6b2dfa0f9d%3A0x8c94e1a7b8e0b8f0!2sFort%20Myers%2C%20FL%2C%20USA!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="location-info">
+                <div class="location-details">
+                    <h3>Our Location</h3>
+                    <p><strong>Fort Myers, Florida</strong></p>
+                    <p>Serving Southwest Florida and beyond</p>
+                </div>
+                <div class="service-areas">
+                    <h3>Service Areas</h3>
+                    <ul>
+                        <li>Fort Myers</li>
+                        <li>Cape Coral</li>
+                        <li>Naples</li>
+                        <li>Sanibel Island</li>
+                        <li>Estero</li>
+                        <li>Bonita Springs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with FAQ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.webp" alt="MovingPro Logo" class="footer-logo-image">
+                    </div>
+                    <p>Your trusted partner for all moving needs. Professional, reliable, and caring service since 2008.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@movingpro.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#home">Local Moving</a></li>
+                        <li><a href="#home">Long Distance Moving</a></li>
+                        <li><a href="#packing">Professional Packing</a></li>
+                        <li><a href="#junk-removal">Junk Removal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h4>How far in advance should I book my move?</h4>
+                            <p>We recommend booking at least 2-3 weeks in advance for local moves and 4-6 weeks for long-distance moves.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you provide packing materials?</h4>
+                            <p>Yes, we provide all necessary packing materials including boxes, tape, bubble wrap, and furniture blankets.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Are you licensed and insured?</h4>
+                            <p>Absolutely! We are fully licensed, bonded, and insured to protect your belongings during the move.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What if something gets damaged?</h4>
+                            <p>We carry comprehensive insurance coverage. Any damages are fully covered and we'll work to resolve issues quickly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MovingPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
