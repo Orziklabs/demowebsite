@@ -70,6 +70,12 @@ function callNow() {
     window.location.href = 'tel:5551234567';
 }
 
+// Open Gumroad function
+function openGumroad() {
+    // Link to the Custom Web Development product
+    window.open('https://orziklab.gumroad.com/l/aklle', '_blank');
+}
+
 // Form submission handling
 const quoteForm = document.getElementById('quoteForm');
 if (quoteForm) {
